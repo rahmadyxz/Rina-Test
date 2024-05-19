@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 global.namabot = "©Rina"
-global.namaowner = "Rinazxi"
+global.namaowner = "Sphynix"
 global.footer_text = "© Rina-Tennoji " + namabot
 global.pp_bot = fs.readFileSync("./image/foto.jpg")
 global.qris = fs.readFileSync("./image/qris.jpg")
