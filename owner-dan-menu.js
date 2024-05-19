@@ -1,27 +1,15 @@
 const fs = require("fs");
-const petik = '```'
-let setting = JSON.parse(fs.readFileSync('./config.json'))
-const { getLimit, getBalance, cekGLimit } = require("./lib/limit")
 
-
-function toCommas(x) {
-    x = x.toString()
-    var pattern = /(-?\d+)(\d{3})/;
-     while (pattern.test(x))
-       x = x.replace(pattern, "$1,$2");
-    return x;
-}
-
-global.namabot = "Rina-Helper"
+global.namabot = "©Rina"
 global.namaowner = "Rinazxi"
 global.footer_text = "© Rina-Tennoji " + namabot
 global.pp_bot = fs.readFileSync("./image/foto.jpg")
 global.qris = fs.readFileSync("./image/qris.jpg")
-global.owner = ['6285817287205','6285778324998']
+global.owner = ['6285817287205','6287882513435']
 global.pairingNumber = ""
 global.sessionName = 'session'
 global.prefa = ['-_-']
-global.caption_pay = `[ PAYMENT SPHYNIXSTORE ]
+global.caption_pay = `[ DONATE UNTUK BOT ]
 
 Qris : Scan barcode di atas
 
@@ -31,43 +19,43 @@ An : Rahmad
 Shopeepay : 089524882317
 An : sphynixstore
 
-[ Silahkan melakukan pembayaran ]
+[ Terima kasih sudah support ]
 `
 
-module.exports.helpMenu = (ucapanWaktu, pushname, ownerName, botName, jam, tanggal, runtime) =>{
+module.exports.helpMenu = (pushname) =>{
   return `
-╔┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈✧
+╔┈┈┈┈「 *INFO USER* 」┈┈┈┈✧
 ╎╭─────────────────✧
-╎│Hai  ${pushname !== undefined ? pushname : 'Kak'}
-╎│Selamat ${ucapanWaktu}  
+╎│Halo kak
+╎│𖣘• 𝗡𝗮𝗺𝗲 : ${pushname}
+╎│Silahkan gunakan bot ini
+╎╰─────────────────✧
 ╠┈┈┈┈「 *BOT INFO* 」┈┈┈┈┈✧
-╎│𖣘• 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : ${ownerName}
-╎│𖣘• 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${botName}
-╎│𖣘• 𝗧𝗶𝗺𝗲 : ${jam}
-╎│𖣘• 𝗗𝗮𝘁𝗲 : ${tanggal(new Date())}
-╎│𖣘• 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-╎╰─────────────────✧
-╠┈┈「 *RULES* 」┈┈✧
 ╎╭─────────────────✧
-╎│•❐ *DILARANG
-╎│    TELP BOT
+╎│𖣘• 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : Sphynix
+╎│𖣘• 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ©Rina-Helper
+╎╰─────────────────✧
+╠┈┈┈┈「 *RULES BOT* 」┈┈┈┈✧
+╎╭─────────────────✧
+╎│𖣘• DILARANG TELP BOT
 ╎│ 
-╎│•❐ *JIKA HANYA DIBACA 
-╎│     OLEH BOT 
-╎│     COBA UNTUK KETIK
-╎│     KETIK KEMBALI*
+╎│𖣘• JIKA HANYA DIBACA 
+╎│    OLEH BOT COBA
+╎│    UNTUK KETIK
+╎│    KEMBALI
 ╎╰─────────────────✧
-╠┈┈「 *JAJAN DISINI* 」┈┈✧
+╠┈┈┈「 *JAJAN DISINI* 」┈┈┈✧
 ╎╭─────────────────✧
-╎│•❐ Jajan app premium
+╎│𖣘• Jajan app premium
 ╎│   
-╎│•❐ Klik nomor dibawah
-╎│   ini 
-╎│   
-╎│•❐ +6285817287205
+╎│𖣘• Klik link dibawah ini
+╎│  
+╎│𖣘• wa.me/6285817287205
 ╎│
-╎│•❐ Cek Profilenya ya
-╎│     
+╎│𖣘• Cek Profilenya
+╎│
+╎│𖣘• Lalu chat admin
+╎│    sphynixstore aja ya
 ╎╰─────────────────✧
 ╠┈┈┈┈「 *FITUR BOT* 」┈┈┈┈┈✧
 ╎╭─────────────────✧
@@ -136,7 +124,7 @@ module.exports.helpMenu = (ucapanWaktu, pushname, ownerName, botName, jam, tangg
 Fitur nya bisa dipakai dengan atau
 tanpa prefix (simbol awalan).
 Sebagai contoh :
-•❐ ketik (.owner ) dengan (.)
-•❐ ketik ( owner ) tanpa  (.)
+» ketik : .owner » dengan (.)
+» ketik :  owner » tanpa  (.)
 `
 }
